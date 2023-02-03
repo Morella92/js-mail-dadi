@@ -14,15 +14,26 @@ console.log(userEmail)
 container.innerHTML= userEmail
 
 //controlla che sia nella lista di email
+let emailFound = 
 
 for (let i = 0; i < emailAddress.length; i++) {
-    
+
     let browserEmail = emailAddress [i]
+    console.log(browserEmail)
 
     if (userEmail === browserEmail) {
-        console.log('La tua email è presente nel sistema.')
-    } else {
-        console.log('Mi dispiace, la tua email non è presente in questo sistema.')
-    }
+
+        
+        
+    } 
+
 }
 // stampa un messaggio appropriato sull’esito del controllo.
+
+if(emailFound){
+
+    console.log('La tua email è presente nel sistema.')
+
+} else {
+    console.log('Mi dispiace, la tua email non è presente in questo sistema.')
+}
